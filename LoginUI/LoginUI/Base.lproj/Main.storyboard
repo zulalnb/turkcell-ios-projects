@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKB-Kn-85j">
+                                <rect key="frame" x="0.0" y="206" width="320" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-FM-37i">
+                                        <rect key="frame" x="202" y="0.0" width="118" height="76"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="4BC-fC-eAo"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PlL-Vk-LI6">
+                                        <rect key="frame" x="15" y="37" width="187" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="6aA-Zt-JeA"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-posta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkI-fL-JQa">
+                                        <rect key="frame" x="15" y="8" width="179" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CSB-em-MXB">
+                                        <rect key="frame" x="15" y="47" width="179" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bkI-fL-JQa" firstAttribute="leading" secondItem="PlL-Vk-LI6" secondAttribute="leading" id="17h-sr-NYN"/>
+                                    <constraint firstItem="rv5-FM-37i" firstAttribute="leading" secondItem="PlL-Vk-LI6" secondAttribute="trailing" id="2D1-RL-afL"/>
+                                    <constraint firstItem="CSB-em-MXB" firstAttribute="leading" secondItem="bkI-fL-JQa" secondAttribute="leading" id="9g1-TE-7CL"/>
+                                    <constraint firstItem="CSB-em-MXB" firstAttribute="top" secondItem="PlL-Vk-LI6" secondAttribute="bottom" constant="8" id="L6q-MS-uK6"/>
+                                    <constraint firstItem="PlL-Vk-LI6" firstAttribute="top" secondItem="bkI-fL-JQa" secondAttribute="bottom" constant="8" id="L87-qO-3lU"/>
+                                    <constraint firstItem="CSB-em-MXB" firstAttribute="trailing" secondItem="bkI-fL-JQa" secondAttribute="trailing" id="QwI-v1-5KJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="rv5-FM-37i" secondAttribute="trailing" id="SQ6-85-YwI"/>
+                                    <constraint firstAttribute="bottom" secondItem="rv5-FM-37i" secondAttribute="bottom" id="Xzq-SA-rLj"/>
+                                    <constraint firstItem="CSB-em-MXB" firstAttribute="height" secondItem="bkI-fL-JQa" secondAttribute="height" id="fbV-Y5-mB3"/>
+                                    <constraint firstItem="bkI-fL-JQa" firstAttribute="top" secondItem="zKB-Kn-85j" secondAttribute="top" constant="8" id="s5C-9i-Iv3"/>
+                                    <constraint firstItem="rv5-FM-37i" firstAttribute="top" secondItem="zKB-Kn-85j" secondAttribute="top" id="t5f-om-Pic"/>
+                                    <constraint firstItem="PlL-Vk-LI6" firstAttribute="centerY" secondItem="zKB-Kn-85j" secondAttribute="centerY" id="v8x-3f-h0Z"/>
+                                    <constraint firstItem="PlL-Vk-LI6" firstAttribute="leading" secondItem="zKB-Kn-85j" secondAttribute="leading" constant="15" id="vQH-gF-VWm"/>
+                                    <constraint firstItem="rv5-FM-37i" firstAttribute="leading" secondItem="bkI-fL-JQa" secondAttribute="trailing" constant="8" symbolic="YES" id="zag-YN-Xqx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTA-tk-TU6">
+                                <rect key="frame" x="173" y="304" width="127" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Şifremi unuttum">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoşgeldiniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMX-ZE-DYz">
+                                <rect key="frame" x="59.5" y="53" width="201" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FMX-ZE-DYz" firstAttribute="centerX" secondItem="zKB-Kn-85j" secondAttribute="centerX" id="7t7-4m-Hmq"/>
+                            <constraint firstItem="hTA-tk-TU6" firstAttribute="top" secondItem="zKB-Kn-85j" secondAttribute="bottom" constant="22" id="G2G-wa-weW"/>
+                            <constraint firstItem="zKB-Kn-85j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.133891" id="OJH-9z-khq"/>
+                            <constraint firstItem="zKB-Kn-85j" firstAttribute="top" secondItem="FMX-ZE-DYz" secondAttribute="bottom" constant="105" id="ZPV-CO-2cG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hTA-tk-TU6" secondAttribute="trailing" constant="20" id="gNz-yJ-wrp"/>
+                            <constraint firstItem="zKB-Kn-85j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k7p-67-3rX"/>
+                            <constraint firstItem="zKB-Kn-85j" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-50" id="kEa-GC-SUf"/>
+                            <constraint firstItem="zKB-Kn-85j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="own-zG-ooF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.18181818181819" y="122.38493723849373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.53333333329999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
