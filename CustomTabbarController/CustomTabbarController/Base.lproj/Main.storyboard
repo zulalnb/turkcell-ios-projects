@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0bd-Io-pUx">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTabbarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1538" y="-88"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="OsT-1j-tct">
+            <objects>
+                <viewController id="ztE-2v-maz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v5G-Pw-zMa">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="K4S-vt-L01"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="qCQ-af-7MR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLp-CA-fRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="780" y="215"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="Fvd-WR-6j5">
+            <objects>
+                <viewController id="oYw-1R-WvE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="II6-dQ-16J">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S3A-y1-oXU"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="vcS-xz-R95"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh9-TX-USO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-391"/>
+        </scene>
+        <!--Main Tabbar Controller-->
+        <scene sceneID="we2-6H-XRy">
+            <objects>
+                <tabBarController id="0bd-Io-pUx" customClass="MainTabbarController" customModule="CustomTabbarController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tby-sX-zLe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="accountImageView" destination="dXs-0F-jvd" id="nG0-8B-nvk"/>
+                        <outlet property="accountView" destination="Oeo-LM-nPo" id="hf5-dM-Xwx"/>
+                        <outlet property="customTabbarView" destination="yuC-hl-Ov4" id="B4B-Jx-2OI"/>
+                        <outlet property="favoritesImageView" destination="hUP-CC-4YY" id="nid-Bm-SQO"/>
+                        <outlet property="favoritesView" destination="PM3-BK-7cH" id="b5u-tF-UZb"/>
+                        <segue destination="oYw-1R-WvE" kind="relationship" relationship="viewControllers" id="EvC-dF-8sa"/>
+                        <segue destination="ztE-2v-maz" kind="relationship" relationship="viewControllers" id="8nr-Kq-Ekx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcT-G1-2Nq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="yuC-hl-Ov4">
+                    <rect key="frame" x="0.0" y="0.0" width="440" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PM3-BK-7cH" userLabel="Favorites View">
+                            <rect key="frame" x="0.0" y="154" width="221.66666666666666" height="0.0"/>
+                            <color key="backgroundColor" name="InactiveColor"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oeo-LM-nPo" userLabel="Account View">
+                            <rect key="frame" x="221.66666666666663" y="154" width="218.33333333333337" height="0.0"/>
+                            <color key="backgroundColor" name="InactiveColor"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="favorite-inactive" translatesAutoresizingMaskIntoConstraints="NO" id="hUP-CC-4YY">
+                            <rect key="frame" x="80" y="34" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="3B1-C6-qAj"/>
+                                <constraint firstAttribute="width" constant="60" id="4rv-xz-ZtA"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" misplaced="YES" image="account-inactive" translatesAutoresizingMaskIntoConstraints="NO" id="dXs-0F-jvd">
+                            <rect key="frame" x="298" y="30" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="7xk-tN-je6"/>
+                                <constraint firstAttribute="height" constant="60" id="Z9Q-Kh-TPc"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-Nl-vXT" userLabel="Favorites Button">
+                            <rect key="frame" x="135" y="17" width="75" height="35"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="setActiveTab:" destination="0bd-Io-pUx" eventType="touchUpInside" id="gq8-Y2-zFq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PuC-zF-CFx" userLabel="Account Button">
+                            <rect key="frame" x="221.66666666666663" y="124" width="218.33333333333337" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="setActiveTab:" destination="0bd-Io-pUx" eventType="touchUpInside" id="yjw-K5-vhm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Prt-rP-tye"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oeo-LM-nPo" firstAttribute="top" secondItem="PM3-BK-7cH" secondAttribute="top" id="0D1-Ml-Y8z"/>
+                        <constraint firstItem="5KJ-Nl-vXT" firstAttribute="bottom" secondItem="PM3-BK-7cH" secondAttribute="bottom" id="0Df-3e-Exw"/>
+                        <constraint firstItem="dXs-0F-jvd" firstAttribute="centerX" secondItem="Oeo-LM-nPo" secondAttribute="centerX" id="2Jy-Ix-8x8"/>
+                        <constraint firstItem="5KJ-Nl-vXT" firstAttribute="leading" secondItem="PM3-BK-7cH" secondAttribute="leading" id="2ec-Me-tUp"/>
+                        <constraint firstItem="Oeo-LM-nPo" firstAttribute="top" secondItem="dXs-0F-jvd" secondAttribute="bottom" constant="-30" id="4UU-Rk-WR9"/>
+                        <constraint firstItem="Oeo-LM-nPo" firstAttribute="leading" secondItem="PM3-BK-7cH" secondAttribute="trailing" id="Dci-Hk-2ol"/>
+                        <constraint firstItem="5KJ-Nl-vXT" firstAttribute="trailing" secondItem="PM3-BK-7cH" secondAttribute="trailing" id="Ejl-yX-IaL"/>
+                        <constraint firstItem="PM3-BK-7cH" firstAttribute="top" secondItem="hUP-CC-4YY" secondAttribute="bottom" constant="-30" id="Ghz-FR-g72"/>
+                        <constraint firstItem="Prt-rP-tye" firstAttribute="top" secondItem="5KJ-Nl-vXT" secondAttribute="top" id="HXU-qZ-cuv"/>
+                        <constraint firstItem="PuC-zF-CFx" firstAttribute="bottom" secondItem="Oeo-LM-nPo" secondAttribute="bottom" id="Lu5-g3-28Q"/>
+                        <constraint firstItem="Prt-rP-tye" firstAttribute="trailing" secondItem="Oeo-LM-nPo" secondAttribute="trailing" id="OM8-qa-4c7"/>
+                        <constraint firstAttribute="bottom" secondItem="PM3-BK-7cH" secondAttribute="bottom" id="WRd-bc-CB3"/>
+                        <constraint firstItem="PM3-BK-7cH" firstAttribute="top" secondItem="Prt-rP-tye" secondAttribute="top" constant="30" id="Zhq-Pi-QD3"/>
+                        <constraint firstItem="Oeo-LM-nPo" firstAttribute="bottom" secondItem="yuC-hl-Ov4" secondAttribute="bottom" id="f3L-ib-bZG"/>
+                        <constraint firstItem="PM3-BK-7cH" firstAttribute="leading" secondItem="Prt-rP-tye" secondAttribute="leading" id="g2s-sM-do9"/>
+                        <constraint firstItem="PuC-zF-CFx" firstAttribute="leading" secondItem="Oeo-LM-nPo" secondAttribute="leading" id="mU4-qM-SK1"/>
+                        <constraint firstItem="PuC-zF-CFx" firstAttribute="top" secondItem="5KJ-Nl-vXT" secondAttribute="top" id="scx-K2-pyM"/>
+                        <constraint firstItem="Oeo-LM-nPo" firstAttribute="width" secondItem="PM3-BK-7cH" secondAttribute="width" multiplier="0.984043" id="ssX-iH-3ON"/>
+                        <constraint firstItem="hUP-CC-4YY" firstAttribute="centerX" secondItem="PM3-BK-7cH" secondAttribute="centerX" id="xtp-Pf-W5h"/>
+                        <constraint firstItem="PuC-zF-CFx" firstAttribute="trailing" secondItem="Oeo-LM-nPo" secondAttribute="trailing" id="yhz-cm-GwS"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-90" y="-88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account-inactive" width="64" height="64"/>
+        <image name="favorite-inactive" width="64" height="64"/>
+        <namedColor name="InactiveColor">
+            <color red="0.86274509803921573" green="0.8784313725490196" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.3803921569" green="0.33333333329999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
