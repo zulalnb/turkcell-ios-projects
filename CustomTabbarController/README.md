@@ -58,7 +58,9 @@ Sekmelerin seçili ve seçili olmayan durumları için ayrı görsel varlıklar 
 
 ## Ekran Görüntüsü
 
-![Custom Tab Bar Controller](./screenshots/home.png)
+<p align="center">
+  <img src="./screenshots/home.png" alt="Custom Tabbar Controller uygulamasının ekranı" width="300" />
+</p>
 
 ## Teknolojiler
 

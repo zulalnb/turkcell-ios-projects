@@ -53,7 +53,9 @@ Giriş alanları ve giriş butonu aynı container view içerisinde gruplanmışt
 
 ## Ekran Görüntüsü
 
-![LoginUI](./screenshots/home.png)
+<p align="center">
+  <img src="./screenshots/home.png" alt="Login UI uygulamasının ekranı" width="300" />
+</p>
 
 ## Teknolojiler
 

@@ -88,7 +88,9 @@ Bu sayede aynı tarih formatlama kodu hem ekran açılışında hem de buton etk
 
 ## Ekran Görüntüsü
 
-![Event Time Tracker](./screenshots/home.png)
+<p align="center">
+  <img src="./screenshots/home.png" alt="Event Time Tracker uygulamasının ekranı" width="300" />
+</p>
 
 ## Teknolojiler
 
