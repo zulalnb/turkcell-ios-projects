@@ -32,7 +32,7 @@ Her uygulama, eğitimlerde ele alınan konuları pratik olarak uygulamak amacıy
 | [Programmatic Login UI](ProgrammaticLoginUI/) | AutoLayout Code Lab |
 | [Custom Tabbar Controller](CustomTabbarController/) | Custom Tabbar Lab |
 | [Timer Tutorial](TimerTutorial/) | Timer |
-| [Camera Permissions](CameraPermissions/) | Kamera İzin Kontrol Lab - 1 |
+| [Camera Permissions](CameraPermissions/) | Kamera İzin Kontrol Lab |
 
 ### Ele Alınan Konular
 
