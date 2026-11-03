@@ -9,7 +9,7 @@ Her uygulama, eğitimlerde ele alınan konuları pratik olarak uygulamak amacıy
 | Eğitim | Açıklama |
 | --- | --- |
 | iOS Programlama 101 | Giriş, tasarım işlemleri, standart yapılar ve kullanımları |
-| iOS Programlama 201 | Listeleme yapıları ve listeleme yapıları üzerinde detaylı işlemler *(yakında)* |
+| iOS Programlama 201 | Listeleme yapıları, özel hücre tasarımı ve Collection View kullanımı |
 | iOS Programlama 301 | Depolama, internet tabanlı işlemler ve konum işlemleri *(yakında)* |
 
 ## iOS Programlama 101
@@ -45,6 +45,31 @@ Her uygulama, eğitimlerde ele alınan konuları pratik olarak uygulamak amacıy
 - Form doğrulama ve ekranlar arası veri aktarımı
 - Timer kullanımı
 - Kamera izinlerinin yönetimi
+
+## iOS Programlama 201
+
+201 eğitimi kapsamında geliştirilen uygulamalar ve ilgili ders konuları aşağıda listelenmiştir.
+
+| App | Konu |
+| --- | --- |
+| [Table View Item List](TableViewItemList/) | ViewController TableView Lab |
+| [Custom Person Table View](CustomPersonTableView/) | Custom Cell Xib Lab |
+| [Product Collection View](ProductCollectionView/) | Collection View Lab |
+| [Article Explorer](ArticleExplorer/) | Bölüm Sonu Lab |
+
+### Ele Alınan Konular
+
+- UITableView ile listeleme
+- UITableViewDataSource ve UITableViewDelegate
+- Custom UITableViewCell tasarımı
+- XIB kullanarak özel hücre oluşturma
+- UICollectionView ile koleksiyon tabanlı listeleme
+- Arama ve filtreleme
+- Pagination (sayfalı veri yükleme)
+
+## iOS Programlama 301
+
+*Yakında eklenecek.*
 
 ## Projeleri Açma
 
