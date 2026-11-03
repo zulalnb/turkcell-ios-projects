@@ -140,6 +140,7 @@
 				INFOPLIST_FILE = CameraPermissions/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Camera Permissions";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera erişimine izin vermelisiniz";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Galeri erişimine izin vermelisiniz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -179,6 +180,7 @@
 				INFOPLIST_FILE = CameraPermissions/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Camera Permissions";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Kamera erişimine izin vermelisiniz";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Galeri erişimine izin vermelisiniz";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

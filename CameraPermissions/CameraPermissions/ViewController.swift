@@ -20,6 +20,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    @IBAction func btnOpenGallery_TUI(_ sender: Any) {
+        openGallery()
+    }
+    
+    
     @IBAction func btnOpenCamera_TUI(_ sender: Any) {
         checkCameraPermission()
     }
@@ -45,39 +50,46 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         @unknown default:
             displayAlert()
         }
-}
-
-func displayAlert() {
-    let title = "Kameraya erişilemiyor"
-    let message = "Erişimi sağlamak için ayarlardan kamera erişimini açmalısınız"
+    }
     
-    let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    func displayAlert() {
+        let title = "Kameraya erişilemiyor"
+        let message = "Erişimi sağlamak için ayarlardan kamera erişimini açmalısınız"
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Tamam", style: .cancel, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Ayarlar", style: .default, handler: openAppSettings))
+        
+        present(alert, animated: true, completion: nil)
+    }
     
-    alert.addAction(UIAlertAction(title: "Tamam", style: .cancel, handler: nil))
-    
-    alert.addAction(UIAlertAction(title: "Ayarlar", style: .default, handler: openAppSettings))
-    
-    present(alert, animated: true, completion: nil)
-}
-
-func openAppSettings(alert: UIAlertAction) {
-    guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
-    
-    UIApplication.shared.open(settingsURL) { success in
-        if !success {
-            print("Ayarlar açılamadı.")
+    func openAppSettings(alert: UIAlertAction) {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
+        
+        UIApplication.shared.open(settingsURL) { success in
+            if !success {
+                print("Ayarlar açılamadı.")
+            }
         }
     }
-}
-
-func openCamera() {
-    if UIImagePickerController.isSourceTypeAvailable(.camera) {
+    
+    func openGallery() {
         let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
-}
-
+    
+    func openCamera() {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
 }
 
