@@ -6,6 +6,12 @@ Bu proje, UIKit kullanılarak ekranın açılış zamanını ve kullanıcı etki
 
 Uygulama açıldığında ekranın açılış tarihi ve saati görüntülenir. Kullanıcı **Tıkla** butonuna bastığında ise butona basıldığı anın tarih ve saati ekranda gösterilir.
 
+## Ekran Görüntüsü
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Event Time Tracker uygulamasının ekranı" width="300" />
+</p>
+
 ## Konular
 
 ### Date
@@ -85,12 +91,6 @@ Bu sayede aynı tarih formatlama kodu hem ekran açılışında hem de buton etk
 4. Ekranın açılış zamanı `lblScreenTime` üzerinde gösterilir.
 5. Kullanıcı **Tıkla** butonuna basar.
 6. Butona basıldığı anın zamanı `lblTapTime` üzerinde gösterilir.
-
-## Ekran Görüntüsü
-
-<p align="center">
-  <img src="./screenshots/home.png" alt="Event Time Tracker uygulamasının ekranı" width="300" />
-</p>
 
 ## Teknolojiler
 

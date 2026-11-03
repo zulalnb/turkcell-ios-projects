@@ -6,6 +6,13 @@ Bu proje, UIKit kullanarak özelleştirilmiş bir Tab Bar arayüzü oluşturma �
 
 Uygulamada **Favorites** ve **Account** olmak üzere iki sekme bulunur. Kullanıcı sekmeler arasında geçiş yaptığında ilgili ekran görüntülenir ve seçili sekmenin ikon ile arka plan rengi güncellenir.
 
+## Ekran Görüntüsü
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Custom Tabbar Controller uygulamasının ekranı" width="300" />
+</p>
+
+
 ## Konular
 
 ### Custom Tab Bar
@@ -55,12 +62,6 @@ Sekmelerin seçili ve seçili olmayan durumları için ayrı görsel varlıklar 
 | Inactive | `favorite-inactive`, `account-inactive` | InactiveColor |
 
 İkonlar ve renkler `Assets.xcassets` içerisinde tanımlanmıştır.
-
-## Ekran Görüntüsü
-
-<p align="center">
-  <img src="./screenshots/home.png" alt="Custom Tabbar Controller uygulamasının ekranı" width="300" />
-</p>
 
 ## Teknolojiler
 

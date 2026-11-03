@@ -8,6 +8,12 @@ Ekranda e-posta ve şifre giriş alanları, giriş yap butonu ve şifremi unuttu
 
 Arayüz tasarımında Auto Layout kullanılarak UI bileşenleri arasındaki boyut, hizalama ve konum ilişkileri tanımlanmıştır.
 
+## Ekran Görüntüsü
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Login UI uygulamasının ekranı" width="300" />
+</p>
+
 ## Öğrenilen Konular
 
 ### UIKit
@@ -50,12 +56,6 @@ Login ekranı temel olarak üç bölümden oluşur:
 3. **Şifremi unuttum:** Giriş alanlarının altında konumlandırılmış buton.
 
 Giriş alanları ve giriş butonu aynı container view içerisinde gruplanmıştır. E-posta ve şifre alanları arasındaki mavi çizgi ise ayrı bir UIView kullanılarak oluşturulmuştur.
-
-## Ekran Görüntüsü
-
-<p align="center">
-  <img src="./screenshots/home.png" alt="Login UI uygulamasının ekranı" width="300" />
-</p>
 
 ## Teknolojiler
 

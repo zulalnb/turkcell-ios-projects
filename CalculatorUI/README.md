@@ -4,6 +4,12 @@ Bu uygulama, iOS arayüz geliştirme sürecinde Auto Layout ve Constraints kulla
 
 Arayüz, UIKit ve Interface Builder kullanılarak Storyboard üzerinde oluşturulmuştur.
 
+## Ekran Görüntüsü
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Calculator UI uygulamasının ekranı" width="300" />
+</p>
+
 ## Konu: Auto Layout ve Constraints
 
 iOS uygulamalarında farklı ekran boyutlarına ve cihaz özelliklerine uyum sağlayan arayüzler oluşturmak için Auto Layout kullanılır.
@@ -66,12 +72,6 @@ Hesap makinesi arayüzü aşağıdaki bileşenlerden oluşur:
 - Butonların genişlikleri birbirleriyle ilişkilendirilmiştir.
 - Ekran alanının farklı bölümleri arasında hizalama ve boyut ilişkileri kurulmuştur.
 - Sonuç alanı Safe Area referans alınarak konumlandırılmıştır.
-
-## Ekran Görüntüsü
-
-<p align="center">
-  <img src="./screenshots/home.png" alt="Calculator UI uygulamasının ekranı" width="300" />
-</p>
 
 ## Kullanılan Teknolojiler
 

@@ -2,6 +2,12 @@
 
 Bu uygulama, iOS projelerinde görsel ve renk kaynaklarının **Asset Catalog** kullanılarak nasıl yönetildiğini göstermek amacıyla hazırlanmıştır.
 
+## Ekran Görüntüsü
+
+<p align="center">
+  <img src="./screenshots/home.png" alt="Assets Tutorial uygulamasının ekranı" width="300" />
+</p>
+
 ## Konu: Asset Catalog
 
 iOS uygulamalarında kullanılan görseller, uygulama ikonları ve renkler Xcode'daki Asset Catalog (`Assets.xcassets`) içerisinde düzenlenebilir. Asset Catalog, bu kaynakları tek bir yerde toplar ve uygulama arayüzünde isimleri üzerinden kullanılmasını sağlar.
@@ -66,12 +72,6 @@ Asset Catalog yalnızca görseller için değil, uygulama renklerini tanımlamak
 | `AccentColor` | Color Set | Uygulamanın vurgu rengi |
 
 Arayüzde `background_tree` görseli tam ekran arka plan olarak, `profile` görseli ise bunun üzerinde konumlandırılmış bir görsel olarak kullanılmıştır.
-
-## Ekran Görüntüsü
-
-<p align="center">
-  <img src="./screenshots/home.png" alt="Assets Tutorial uygulamasının ekranı" width="300" />
-</p>
 
 ## Kullanılan Teknolojiler
 
