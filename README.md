@@ -8,9 +8,9 @@ Her uygulama, eğitimlerde ele alınan konuları pratik olarak uygulamak amacıy
 
 | Eğitim | Açıklama |
 | --- | --- |
-| iOS Programlama 101 | Giriş, tasarım işlemleri, standart yapılar ve kullanımları |
-| iOS Programlama 201 | Listeleme yapıları, özel hücre tasarımı ve Collection View kullanımı |
-| iOS Programlama 301 | Depolama, internet tabanlı işlemler ve konum işlemleri *(yakında)* |
+| [iOS Programlama 101](#ios-programlama-101) | Giriş, tasarım işlemleri, standart yapılar ve kullanımları |
+| [iOS Programlama 201](#ios-programlama-201) | Listeleme yapıları, özel hücre tasarımı ve Collection View kullanımı |
+| [iOS Programlama 301](#ios-programlama-301) | Depolama, internet tabanlı işlemler ve konum işlemleri *(yakında)* |
 
 ## iOS Programlama 101
 
