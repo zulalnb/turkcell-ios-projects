@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //        timer = Timer.scheduledTimer(withTimeInterval: timerDuration, repeats: true, block: timerDidFinish)
+        // timer = Timer.scheduledTimer(withTimeInterval: timerDuration, repeats: true, block: timerDidFinish)
         
         timer = Timer.scheduledTimer(timeInterval: timerDuration, target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: true)
     }
