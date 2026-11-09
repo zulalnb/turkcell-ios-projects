@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25407"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FileManagerBasics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-vi-Fw6">
+                                <rect key="frame" x="156" y="215" width="128" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dosya İşlemleri">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fileOperationsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foe-g8-it9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izs-Nw-hJT">
+                                <rect key="frame" x="156" y="304" width="128" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Dosya Seç">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="documentPickerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x4B-eb-Pcu"/>
+                                    <action selector="fileOperationsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XeM-jb-5Ra"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Izs-Nw-hJT" secondAttribute="bottom" constant="586" id="AVE-Ld-Ea1"/>
+                            <constraint firstItem="Izs-Nw-hJT" firstAttribute="top" secondItem="3tt-vi-Fw6" secondAttribute="bottom" constant="57" id="KfU-zV-aR7"/>
+                            <constraint firstItem="Izs-Nw-hJT" firstAttribute="leading" secondItem="3tt-vi-Fw6" secondAttribute="leading" id="YVr-qf-CEh"/>
+                            <constraint firstItem="Izs-Nw-hJT" firstAttribute="trailing" secondItem="3tt-vi-Fw6" secondAttribute="trailing" id="b1k-Kf-nHc"/>
+                            <constraint firstItem="3tt-vi-Fw6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eqi-QP-Yeb"/>
+                            <constraint firstItem="3tt-vi-Fw6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="153" id="qEo-7p-mqq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
