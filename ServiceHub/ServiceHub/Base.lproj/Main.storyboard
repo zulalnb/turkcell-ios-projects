@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25407"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ServiceHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="940-UG-vW6">
+                                <rect key="frame" x="0.0" y="62" width="440" height="860"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="900-it-nSI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="W3P-37-wFj"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-Eb-vVS">
+                                <rect key="frame" x="339.33333333333331" y="72" width="84.666666666666686" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Yap">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="htg-34-vjD" kind="show" id="iwu-I8-bDb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="940-UG-vW6" secondAttribute="trailing" id="UIC-Aj-DrM"/>
+                            <constraint firstItem="wZt-Eb-vVS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="UZw-gO-zcv"/>
+                            <constraint firstItem="940-UG-vW6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X5J-HH-MgU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="940-UG-vW6" secondAttribute="bottom" id="cUy-zz-kb6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wZt-Eb-vVS" secondAttribute="trailing" constant="16" id="hY2-Hr-rKO"/>
+                            <constraint firstItem="940-UG-vW6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sMc-GP-gfe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="serviceProvidersTableView" destination="940-UG-vW6" id="t8p-Vq-cwV"/>
+                        <outlet property="signInButton" destination="wZt-Eb-vVS" id="Z93-az-S4P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="131"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="jsM-9V-2yK">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="htg-34-vjD" customClass="SignInViewController" customModule="ServiceHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jt4-uR-r8L">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5M-zT-xRa">
+                                <rect key="frame" x="16" y="112" width="408" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Soyad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-1j-e5C">
+                                <rect key="frame" x="16" y="178" width="408" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hizmet Konusu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJ3-Pu-Cya">
+                                <rect key="frame" x="16" y="244" width="408" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-posta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHx-lq-mQa">
+                                <rect key="frame" x="16" y="310" width="408" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3li-D5-p2S">
+                                <rect key="frame" x="16" y="376" width="408" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ng-yL-lMm">
+                                <rect key="frame" x="16" y="458" width="408" height="32"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="htg-34-vjD" eventType="touchUpInside" id="5m9-8S-2KD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yO6-5a-yFo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3li-D5-p2S" firstAttribute="trailing" secondItem="UHx-lq-mQa" secondAttribute="trailing" id="1CO-1B-ijo"/>
+                            <constraint firstItem="4ng-yL-lMm" firstAttribute="leading" secondItem="3li-D5-p2S" secondAttribute="leading" id="4Ph-wU-eWL"/>
+                            <constraint firstItem="3li-D5-p2S" firstAttribute="top" secondItem="UHx-lq-mQa" secondAttribute="bottom" constant="32" id="7XD-8F-1mL"/>
+                            <constraint firstItem="3li-D5-p2S" firstAttribute="leading" secondItem="UHx-lq-mQa" secondAttribute="leading" id="Jge-tq-ucD"/>
+                            <constraint firstItem="UHx-lq-mQa" firstAttribute="trailing" secondItem="JJ3-Pu-Cya" secondAttribute="trailing" id="Klu-D4-GYH"/>
+                            <constraint firstItem="JJ3-Pu-Cya" firstAttribute="trailing" secondItem="9MH-1j-e5C" secondAttribute="trailing" id="PD6-T3-1Lr"/>
+                            <constraint firstItem="4ng-yL-lMm" firstAttribute="trailing" secondItem="3li-D5-p2S" secondAttribute="trailing" id="RRE-xl-GKG"/>
+                            <constraint firstItem="JJ3-Pu-Cya" firstAttribute="leading" secondItem="9MH-1j-e5C" secondAttribute="leading" id="SbY-ZQ-KLW"/>
+                            <constraint firstItem="yO6-5a-yFo" firstAttribute="trailing" secondItem="x5M-zT-xRa" secondAttribute="trailing" constant="16" id="U2r-be-bRh"/>
+                            <constraint firstItem="UHx-lq-mQa" firstAttribute="top" secondItem="JJ3-Pu-Cya" secondAttribute="bottom" constant="32" id="cz2-ZI-Gbq"/>
+                            <constraint firstItem="9MH-1j-e5C" firstAttribute="top" secondItem="x5M-zT-xRa" secondAttribute="bottom" constant="32" id="fYu-DQ-eTj"/>
+                            <constraint firstItem="9MH-1j-e5C" firstAttribute="trailing" secondItem="x5M-zT-xRa" secondAttribute="trailing" id="g8k-in-tZg"/>
+                            <constraint firstItem="JJ3-Pu-Cya" firstAttribute="top" secondItem="9MH-1j-e5C" secondAttribute="bottom" constant="32" id="inA-Dz-vKx"/>
+                            <constraint firstItem="x5M-zT-xRa" firstAttribute="leading" secondItem="yO6-5a-yFo" secondAttribute="leading" constant="16" id="l75-vE-DaG"/>
+                            <constraint firstItem="UHx-lq-mQa" firstAttribute="leading" secondItem="JJ3-Pu-Cya" secondAttribute="leading" id="rAj-rd-sZz"/>
+                            <constraint firstItem="x5M-zT-xRa" firstAttribute="top" secondItem="yO6-5a-yFo" secondAttribute="top" constant="50" id="t1y-bA-n6y"/>
+                            <constraint firstItem="4ng-yL-lMm" firstAttribute="top" secondItem="3li-D5-p2S" secondAttribute="bottom" constant="48" id="taj-gq-FhZ"/>
+                            <constraint firstItem="9MH-1j-e5C" firstAttribute="leading" secondItem="x5M-zT-xRa" secondAttribute="leading" id="wZj-kX-pJn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FHR-rE-4Jv"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="UHx-lq-mQa" id="ztU-eR-85K"/>
+                        <outlet property="firstNameTextField" destination="x5M-zT-xRa" id="M51-Yg-caV"/>
+                        <outlet property="lastNameTextField" destination="9MH-1j-e5C" id="tbC-gh-AUI"/>
+                        <outlet property="passwordTextField" destination="3li-D5-p2S" id="0MU-Ji-w9T"/>
+                        <outlet property="serviceCategoryTextField" destination="JJ3-Pu-Cya" id="svH-U4-NtF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNr-N7-3I0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958.63636363636374" y="130.54393305439331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
