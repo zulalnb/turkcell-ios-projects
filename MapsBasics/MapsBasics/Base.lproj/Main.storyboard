@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25407"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMapsBasics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urE-BT-2zB" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="105" width="440" height="817"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8F-9F-fdy">
+                                <rect key="frame" x="0.0" y="105" width="440" height="817"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dSo-WL-K6z">
+                                <rect key="frame" x="0.0" y="62" width="440" height="32"/>
+                                <segments>
+                                    <segment title="Google Maps"/>
+                                    <segment title="Apple Maps"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6vb-VF-ueQ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="urE-BT-2zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ANP-UA-t8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="urE-BT-2zB" secondAttribute="trailing" id="JZF-2G-EJU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="urE-BT-2zB" secondAttribute="bottom" id="NMf-lG-pEN"/>
+                            <constraint firstItem="dSo-WL-K6z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Spe-TK-QP6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dSo-WL-K6z" secondAttribute="trailing" id="fUu-Xt-U8z"/>
+                            <constraint firstItem="dSo-WL-K6z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fvH-Mv-ayc"/>
+                            <constraint firstItem="a8F-9F-fdy" firstAttribute="top" secondItem="dSo-WL-K6z" secondAttribute="bottom" constant="12" id="ga6-Bx-Chw"/>
+                            <constraint firstItem="a8F-9F-fdy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="iZL-CN-CeM"/>
+                            <constraint firstItem="urE-BT-2zB" firstAttribute="top" secondItem="dSo-WL-K6z" secondAttribute="bottom" constant="12" id="j2O-uE-dFl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="a8F-9F-fdy" secondAttribute="bottom" id="q3k-nr-u0h"/>
+                            <constraint firstItem="a8F-9F-fdy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zki-pj-Xoi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleMapView" destination="a8F-9F-fdy" id="ceF-yN-Bld"/>
+                        <outlet property="googleMapView" destination="urE-BT-2zB" id="9RZ-Cc-wOV"/>
+                        <outlet property="mapTypeSegment" destination="dSo-WL-K6z" id="lXQ-mC-aKJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73.63636363636364" y="92.887029288702934"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
